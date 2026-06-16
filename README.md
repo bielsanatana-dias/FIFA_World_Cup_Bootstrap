@@ -1,4 +1,13 @@
-# FIFA World Cup Bootstrap
+## Copa do Mundo da FIFA Bootstrap
+
+Um site sobre a Copa do Mundo da FIFA, feito com Bootstrap como projeto escolar.
+
+[visite o site](https://kawandev22.github.io/FIFA_World_Cup_Bootstrap/)
+
+---
+
+
+## FIFA World Cup Bootstrap
 A website about the FIFA World Cup, built using Bootstrap as a school project.
 
 [visit the website](https://kawandev22.github.io/FIFA_World_Cup_Bootstrap/)
