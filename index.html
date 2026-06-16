@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copa do Mundo FIFA 2026</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-copa sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-trophy-fill me-2"></i>FIFA World Cup
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto gap-1">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="historia.html">História</a></li>
+          <li class="nav-item"><a class="nav-link" href="campeoes.html">Campeões</a></li>
+          <li class="nav-item"><a class="nav-link" href="brasil.html">Brasil</a></li>
+          <li class="nav-item"><a class="nav-link" href="artilheiros.html">Artilheiros</a></li>
+          <li class="nav-item"><a class="nav-link" href="estadios.html">Estádios</a></li>
+          <li class="nav-item"><a class="nav-link" href="mascotes.html">Mascotes</a></li>
+          <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="ranking.html">Ranking</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ALERT de boas-vindas -->
+    <div class="container mt-3">
+      <div class="alert alert-copa alert-dismissible fade show" role="alert">
+        <i class="bi bi-megaphone-fill me-2"></i>
+        <strong>Novidade!</strong> A Copa do Mundo FIFA 2026 será a primeira com <strong>48 seleções</strong> e acontecerá no Canadá, EUA e México!
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Fechar"></button>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="page-hero text-center">
+      <div class="container">
+        <p class="text-uppercase" style="color:var(--dourado);letter-spacing:.15em;font-size:.85rem;font-weight:600;">FIFA World Cup™</p>
+        <h1>COPA DO MUNDO<br>FIFA</h1>
+        <p class="lead mt-3 mx-auto" style="max-width:550px;">
+          O maior torneio de futebol do planeta. Histórias, campeões, lendas e a paixão que une o mundo.
+        </p>
+        <div class="mt-4 d-flex flex-wrap justify-content-center gap-2">
+          <a href="historia.html" class="btn-copa btn">Conheça a História</a>
+          <a href="campeoes.html" class="btn-copa-outline btn">Ver Campeões</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL de Copas -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title mb-4 text-center">Momentos Inesquecíveis</h2>
+        <div id="carouselHome" class="carousel slide carousel-copa" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner rounded-3 overflow-hidden">
+            <!-- Slide 1 — substitua a div por <img src="img/sua-foto.jpg" alt="..." class="d-block w-100"> -->
+            <div class="carousel-item active">
+              <div class="img-placeholder-carousel d-flex align-items-center justify-content-center" style="height:450px;background:linear-gradient(135deg,#0a2a5e,#185ADB22);">
+                <i class="bi bi-image" style="font-size:5rem;color:rgba(255,195,0,.3);"></i>
+              </div>
+              <div class="carousel-caption">
+                <h5>Brasil 1970 — México</h5>
+                <p>O melhor time de todos os tempos conquistou o tricampeonato com futebol-arte.</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="img-placeholder-carousel d-flex align-items-center justify-content-center" style="height:450px;background:linear-gradient(135deg,#0a2a5e,#185ADB22);">
+                <i class="bi bi-image" style="font-size:5rem;color:rgba(255,195,0,.3);"></i>
+              </div>
+              <div class="carousel-caption">
+                <h5>Maradona 1986 — México</h5>
+                <p>A "Mão de Deus" e o gol do século no mesmo dia.</p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div class="img-placeholder-carousel d-flex align-items-center justify-content-center" style="height:450px;background:linear-gradient(135deg,#0a2a5e,#185ADB22);">
+                <i class="bi bi-image" style="font-size:5rem;color:rgba(255,195,0,.3);"></i>
+              </div>
+              <div class="carousel-caption">
+                <h5>Argentina 2022 — Qatar</h5>
+                <p>Messi finalmente conquistou o título mais desejado do futebol mundial.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS de apresentação -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-4">Explore o Site</h2>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card-copa h-100">
+              <div class="img-placeholder"><i class="bi bi-book-half"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">História</h5>
+                <p class="card-text">Da primeira edição em 1930 às inovações modernas do futebol mundial.</p>
+                <a href="historia.html" class="btn-copa btn btn-sm mt-2">Ver Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card-copa h-100">
+              <div class="img-placeholder"><i class="bi bi-trophy"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Campeões</h5>
+                <p class="card-text">Conheça todas as seleções que levantaram a taça mais cobiçada do futebol.</p>
+                <a href="campeoes.html" class="btn-copa btn btn-sm mt-2">Ver Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card-copa h-100">
+              <div class="img-placeholder"><i class="bi bi-person-badge"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Artilheiros</h5>
+                <p class="card-text">Os maiores goleadores da história das Copas do Mundo FIFA.</p>
+                <a href="artilheiros.html" class="btn-copa btn btn-sm mt-2">Ver Mais</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card card-copa h-100">
+              <div class="img-placeholder"><i class="bi bi-buildings"></i></div>
+              <div class="card-body">
+                <h5 class="card-title">Estádios</h5>
+                <p class="card-text">Os templos do futebol que já receberam partidas históricas.</p>
+                <a href="estadios.html" class="btn-copa btn btn-sm mt-2">Ver Mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats rápidas -->
+    <section class="py-5" style="background:rgba(255,255,255,0.03);">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-6 col-md-3">
+            <div class="stat-number">22</div>
+            <div class="stat-label">Edições realizadas</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number">48</div>
+            <div class="stat-label">Seleções em 2026</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Títulos do Brasil</div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-number">17</div>
+            <div class="stat-label">Gols de Klose</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="mb-1">
+        <a href="index.html"><strong style="color:var(--dourado);">COPA 2026</strong></a> — Site educativo sobre a Copa do Mundo FIFA
+      </p>
+      <p class="mb-0">Desenvolvido com Bootstrap 5 &nbsp;|&nbsp; Projeto Escolar</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

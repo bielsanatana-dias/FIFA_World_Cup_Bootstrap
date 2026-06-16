@@ -1,0 +1,426 @@
+/* ============================================================
+   COPA DO MUNDO FIFA 2026 — Global Stylesheet
+   Palette: Azul Escuro #0A1931 | Azul Médio #185ADB | 
+            Dourado #FFC300 | Branco #F8F9FA | Preto #111111
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600;700&display=swap');
+
+:root {
+  --azul-escuro: #0A1931;
+  --azul-medio:  #185ADB;
+  --dourado:     #FFC300;
+  --branco:      #F8F9FA;
+  --preto:       #111111;
+  --verde:       #009C3B;
+  --amarelo:     #FFDF00;
+}
+
+/* ---- Base ---- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main { flex: 1; }
+
+/* ---- Typography ---- */
+h1, h2, h3, .display-font {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* ---- Navbar ---- */
+.navbar-copa {
+  background: linear-gradient(90deg, var(--azul-escuro) 0%, #0d2347 100%);
+  border-bottom: 3px solid var(--dourado);
+}
+
+.navbar-copa .navbar-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  color: var(--dourado) !important;
+  letter-spacing: 0.06em;
+}
+
+.navbar-copa .nav-link {
+  color: var(--branco) !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 0.8rem !important;
+  transition: color 0.2s;
+}
+
+.navbar-copa .nav-link:hover,
+.navbar-copa .nav-link.active {
+  color: var(--dourado) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--dourado) !important;
+}
+.navbar-toggler-icon {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(89%) saturate(400%) hue-rotate(2deg) brightness(104%) contrast(104%);
+}
+
+/* ---- Hero / Page Header ---- */
+.page-hero {
+  background: linear-gradient(135deg, var(--azul-escuro) 0%, #0d2347 60%, #0a2a5e 100%);
+  padding: 70px 0 50px;
+  border-bottom: 4px solid var(--dourado);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(24,90,219,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: var(--dourado);
+  line-height: 1;
+}
+
+.page-hero p.lead {
+  color: rgba(248,249,250,0.8);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* ---- Gold divider ---- */
+.gold-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--dourado), transparent);
+  border: none;
+  margin: 2.5rem auto;
+  max-width: 300px;
+}
+
+/* ---- Section headings ---- */
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  color: var(--dourado);
+  letter-spacing: 0.05em;
+}
+
+/* ---- Cards ---- */
+.card-copa {
+  background: #0d2347;
+  border: 1px solid rgba(255,195,0,0.2);
+  border-radius: 10px;
+  color: var(--branco);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+  overflow: hidden;
+}
+
+.card-copa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  border-color: var(--dourado);
+}
+
+.card-copa .card-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: var(--dourado);
+  letter-spacing: 0.04em;
+}
+
+.card-copa .card-text {
+  color: rgba(248,249,250,0.75);
+  font-size: 0.9rem;
+}
+
+.card-copa .img-placeholder {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #0a2a5e 0%, #185ADB22 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,195,0,0.35);
+  font-size: 3rem;
+}
+
+/* ---- Badges ---- */
+.badge-copa {
+  background-color: var(--dourado) !important;
+  color: var(--preto) !important;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.4em 0.75em;
+  border-radius: 4px;
+}
+
+/* ---- Buttons ---- */
+.btn-copa {
+  background-color: var(--dourado);
+  color: var(--preto);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1.25rem;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-copa:hover {
+  background-color: #e6b000;
+  color: var(--preto);
+  transform: translateY(-1px);
+}
+
+.btn-copa-outline {
+  background: transparent;
+  border: 2px solid var(--dourado);
+  color: var(--dourado);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.2s;
+}
+
+.btn-copa-outline:hover {
+  background-color: var(--dourado);
+  color: var(--preto);
+}
+
+/* ---- Breadcrumb ---- */
+.breadcrumb-copa {
+  background: rgba(255,255,255,0.04);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--dourado);
+}
+
+.breadcrumb-copa .breadcrumb-item a {
+  color: var(--dourado);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.breadcrumb-copa .breadcrumb-item.active {
+  color: rgba(248,249,250,0.6);
+  font-size: 0.85rem;
+}
+
+.breadcrumb-copa .breadcrumb-item + .breadcrumb-item::before {
+  color: var(--dourado);
+}
+
+/* ---- Accordion ---- */
+.accordion-copa .accordion-button {
+  background: #0d2347;
+  color: var(--dourado);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+  border: none;
+  box-shadow: none !important;
+}
+
+.accordion-copa .accordion-button:not(.collapsed) {
+  background: #102960;
+  color: var(--dourado);
+}
+
+.accordion-copa .accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(89%) saturate(400%) hue-rotate(2deg) brightness(104%) contrast(104%);
+}
+
+.accordion-copa .accordion-item {
+  background: #0d2347;
+  border: 1px solid rgba(255,195,0,0.18);
+  margin-bottom: 0.4rem;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.accordion-copa .accordion-body {
+  background: #0d2347;
+  color: rgba(248,249,250,0.8);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ---- Alert ---- */
+.alert-copa {
+  background: linear-gradient(135deg, #102960, #0d2347);
+  border-left: 4px solid var(--dourado);
+  color: var(--branco);
+  border-radius: 6px;
+}
+
+.alert-copa strong { color: var(--dourado); }
+
+/* ---- Carousel ---- */
+.carousel-copa .carousel-inner img,
+.carousel-copa .carousel-inner .img-placeholder-carousel {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-copa .carousel-inner .img-placeholder-carousel {
+  background: linear-gradient(135deg, #0a2a5e 0%, #185ADB33 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,195,0,0.3);
+  font-size: 5rem;
+}
+
+.carousel-copa .carousel-caption {
+  background: linear-gradient(0deg, rgba(10,25,49,0.92) 0%, transparent 100%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 1.5rem 1.2rem;
+  border-radius: 0 0 10px 10px;
+  text-align: left;
+}
+
+.carousel-copa .carousel-caption h5 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  color: var(--dourado);
+  margin-bottom: 0.2rem;
+}
+
+.carousel-copa .carousel-control-prev-icon,
+.carousel-copa .carousel-control-next-icon {
+  background-color: rgba(255,195,0,0.8);
+  border-radius: 50%;
+  padding: 14px;
+  background-size: 55%;
+}
+
+/* ---- Table ---- */
+.table-copa {
+  color: var(--branco);
+}
+
+.table-copa thead th {
+  background: var(--dourado);
+  color: var(--preto);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.table-copa tbody tr {
+  background: #0d2347;
+  border-bottom: 1px solid rgba(255,195,0,0.1);
+  transition: background 0.2s;
+}
+
+.table-copa tbody tr:hover {
+  background: #102960;
+}
+
+.table-copa tbody td { border: none; }
+
+/* ---- Form ---- */
+.form-copa .form-control,
+.form-copa .form-select {
+  background: #0d2347;
+  border: 1px solid rgba(255,195,0,0.3);
+  color: var(--branco);
+  border-radius: 6px;
+}
+
+.form-copa .form-control:focus,
+.form-copa .form-select:focus {
+  background: #0d2347;
+  border-color: var(--dourado);
+  color: var(--branco);
+  box-shadow: 0 0 0 0.2rem rgba(255,195,0,0.25);
+}
+
+.form-copa .form-label {
+  color: rgba(248,249,250,0.8);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ---- Footer ---- */
+footer {
+  background: var(--preto);
+  border-top: 3px solid var(--dourado);
+  padding: 2rem 0;
+  color: rgba(248,249,250,0.55);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--dourado);
+  text-decoration: none;
+}
+
+/* ---- Flag placeholder ---- */
+.flag-placeholder {
+  width: 60px;
+  height: 40px;
+  background: rgba(255,195,0,0.12);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* ---- Stat number ---- */
+.stat-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  color: var(--dourado);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(248,249,250,0.5);
+}
+
+/* ---- Player card ---- */
+.player-card .img-placeholder {
+  height: 220px;
+}
+
+/* ---- Mascote card ---- */
+.mascote-card .img-placeholder {
+  height: 250px;
+  font-size: 4rem;
+}
+
+/* ---- Responsive tweaks ---- */
+@media (max-width: 768px) {
+  .carousel-copa .carousel-inner .img-placeholder-carousel { height: 280px; }
+  .carousel-copa .carousel-caption h5 { font-size: 1.3rem; }
+}
